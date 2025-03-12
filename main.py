@@ -3,7 +3,6 @@ from pydantic import BaseModel, Field
 from typing import Optional
 
 app = FastAPI()
-
 class Device(BaseModel):
     connection: Optional[bool] = Field(default=None)
     motor: Optional[str] = Field(default=None)
